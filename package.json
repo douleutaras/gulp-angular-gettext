@@ -28,7 +28,7 @@
   "dependencies": {
     "through2": "^2.0.1",
     "gulp-util": "^3.0.7",
-    "angular-gettext-tools": "^2.2.0",
+    "angular-gettext-tools": "https://github.com/douleutaras/angular-gettext-tools/tarball/master",
     "lodash.isstring": "^4.17.5"
   },
   "devDependencies": {
