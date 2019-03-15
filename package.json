@@ -1,5 +1,5 @@
 {
-  "name": "gulp-angular-gettext",
+  "name": "@douleutarasgr/gulp-angular-gettext",
   "version": "2.2.0",
   "description": "Gulp plugin for extracting/compiling angular-gettext strings",
   "license": "MIT",
@@ -26,10 +26,10 @@
   ],
   "main": "index.js",
   "dependencies": {
-    "through2": "^2.0.1",
+    "@douleutarasgr/angular-gettext-tools": "^2.3.14",
     "gulp-util": "^3.0.7",
-    "angular-gettext-tools": "https://github.com/douleutaras/angular-gettext-tools/tarball/master",
-    "lodash.isstring": "^4.0.1"
+    "lodash.isstring": "^4.0.1",
+    "through2": "^2.0.1"
   },
   "devDependencies": {
     "chai": "^3.5.0",
