@@ -1,10 +1,13 @@
+sudo: false
 language: node_js
 node_js:
-  - "0.10"
-  - "0.12"
-  - "4"
-  - "5"
-  - "6"
-sudo: false
-notifications:
-  email: false
+  - node
+before_script:
+  - npm install -g grunt-cli
+deploy:
+  provider: npm
+  email: v.klymenko@douleutaras.com
+  api_key:
+    secure: Dh0OENTUrMXuMmbvbTg5Ok6HnMQnsxQqlm/kPeNGhmMeAgNvEiSsRl+fmKzymNYDv3cf8/pHbt4dHGuRYQCgebEQYA0QnbbO12i9n92FrNq5dI+eAEGugZQvN4VcrSog8qOAChYc2rIOOmOk5khO063lVKFSQJYMtYqkuqYmPnoo4GeN7lqq+T3Js9BGMZvhIkq5Qy+Io9tUNQAN8hesU1kV7rDYgrMcB6ECiTDifQ1UY9Guiq5GO17uaHoDrgddAAHrdEE03txXJjIdUfrjZDqs/cq+uHSiAKGY60NyMsM47eQDY6E2w6oj5BBmtbAXaqYMQeV1+3f+6PfThgUOtISEEg7dvLgCSH6A19/nUemNMUZERimPaDdIToIubUCzd43VOEb3msBWRKitGrVb2jqzDA7wtmuQM3+TQexdM8Tqk0OZ1GePZxkAkBbukOz1rGei0egVXdXB3pmte8A25Q6FKEC599L0cn5dW6Vl01cBMeX5Kzq3YaIeGEOZekldCIpsig5LN+bbl/cv3rvfPLNHnijLRRwTWDL2l1BdZRtZkhWuK+NP6Xdn645ul7++dVVg1adaqQ2aCbhJqTgAe6bpJ3LHk29mVu3qdtLcOEQ1Z+nJG1bpgmgCdOgffcfivkN1YE7BC2oHyGDFlMSqYmOZMiBkTavVy+qG6srDkOo=
+  on:
+    repo: douleutaras/gulp-angular-gettext
